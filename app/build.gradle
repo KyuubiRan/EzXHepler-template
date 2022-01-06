@@ -6,7 +6,7 @@ android {
     buildToolsVersion "32.0"
 
     defaultConfig {
-        applicationId "me.kyuubiran.template"
+        applicationId "com.example.template"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1
@@ -37,6 +37,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.kyuubiran:EzXHelper:0.5.0'
+    implementation 'com.github.kyuubiran:EzXHelper:0.5.4'
     compileOnly 'de.robv.android.xposed:api:82'
 }
