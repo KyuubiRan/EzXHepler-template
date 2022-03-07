@@ -4,6 +4,7 @@ import com.example.template.hook.BaseHook
 import com.example.template.hook.ExampleHook
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log
+import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.IXposedHookZygoteInit
 import de.robv.android.xposed.callbacks.XC_LoadPackage
@@ -30,14 +31,12 @@ class MainHook : IXposedHookLoadPackage, IXposedHookZygoteInit /* Optional */ {
 
     private fun initHooks(vararg hook: BaseHook) {
         hook.forEach {
-            try {
+            runCatching {
                 if (it.isInit) return@forEach
                 it.init()
                 it.isInit = true
                 Log.i("Inited hook: ${it.javaClass.simpleName}")
-            } catch (thr: Throwable) {
-                Log.e("Failed init hook: ${it.javaClass.simpleName}", thr)
-            }
+            }.logexIfThrow("Failed init hook: ${it.javaClass.simpleName}")
         }
     }
 }

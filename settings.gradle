@@ -8,5 +8,5 @@ dependencyResolutionManagement {
 }
 
 include ':app'
-rootProject.name = "ezxhepler-template"
+rootProject.name = "EzXHepler-template"
 
