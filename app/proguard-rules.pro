@@ -1,1 +1,1 @@
--keepclasseswithmembers class com.example.template.MainHook {    <init>();}
+-keep class com.example.template.MainHook
