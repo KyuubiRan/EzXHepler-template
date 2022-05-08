@@ -9,3 +9,5 @@ Before use:
 - Change the `rootProject.name` in `settings.gradle.kts`
 - Sync gradle
 - Change the `TAG` and `PACKAGE_NAME_HOOKED` in `MainHook.kt`
+
+if you don't like kts, you can switch to the groovy branch.
