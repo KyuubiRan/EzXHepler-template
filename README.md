@@ -1,7 +1,7 @@
 # EzXhepler-template
 A template for [EzXHelper](https://github.com/KyuubiRan/EzXHelper)
 
-这是一份关于[EzXHelper](https://github.com/KyuubiRan/EzXHelper)的项目木板
+这是一份关于[EzXHelper](https://github.com/KyuubiRan/EzXHelper)的项目模板
 
 ## Use this template to create your project / 使用模板创建项目
 Before use:
