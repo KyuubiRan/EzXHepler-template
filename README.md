@@ -13,8 +13,6 @@ Before use:
 - Change the `TAG` and `PACKAGE_NAME_HOOKED` in `MainHook.kt`
 - Change the `xposedscope` in `arrays.xml`
 
-if you don't like kts, you can switch to the groovy branch.
-
 开始之前：
 - 修改`build.gradle.kts`中的`applicationId`
 - 修改包名并同时修改`xposed_init`中的Hook入口
@@ -23,5 +21,3 @@ if you don't like kts, you can switch to the groovy branch.
 - 执行 Sync gradle
 - 修改`MainHook.kt`中的`TAG`和`PACKAGE_NAME_HOOKED`
 - 修改`arrays.xml`中的`xposedscope`
-
-如果你不喜欢kts，你可以切换到groovy分支。
