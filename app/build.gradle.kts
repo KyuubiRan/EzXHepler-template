@@ -6,6 +6,8 @@ plugins {
 android {
     compileSdk = 33
 
+    namespace = "com.example.template"
+
     defaultConfig {
         applicationId = "com.example.template"
         minSdk = 24
@@ -36,6 +38,6 @@ android {
 }
 
 dependencies {
-    implementation("com.github.kyuubiran:EzXHelper:1.0.3")
+    implementation("com.github.kyuubiran:EzXHelper:2.0.6")
     compileOnly("de.robv.android.xposed:api:82")
 }
