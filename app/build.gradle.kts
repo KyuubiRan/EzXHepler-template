@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
 
     namespace = "com.example.template"
 
     defaultConfig {
         applicationId = "com.example.template"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
     }
@@ -25,7 +25,7 @@ android {
     }
 
     androidResources {
-        additionalParameters("--allow-reserved-package-id", "--package-id", "0x45")
+        additionalParameters += arrayOf("--allow-reserved-package-id", "--package-id", "0x45")
     }
 
     compileOptions {
@@ -38,6 +38,6 @@ android {
 }
 
 dependencies {
-    implementation("com.github.kyuubiran:EzXHelper:2.0.7")
+    implementation("com.github.kyuubiran:EzXHelper:2.0.8")
     compileOnly("de.robv.android.xposed:api:82")
 }

@@ -1,4 +1,4 @@
-package com.example.sample.hook;
+package com.example.template.hook;
 
 import android.app.Activity;
 
